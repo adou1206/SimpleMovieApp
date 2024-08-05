@@ -844,7 +844,7 @@
 			);
 			currentVersion = 8593DEAC2C5FE3380012D609 /* MovieDataModel.xcdatamodel */;
 			name = MovieDataModel.xcdatamodeld;
-			path = /Users/adou1206/Desktop/iOS_Project/SimpleMovieApp/SimpleMovieApp/MovieDataModel.xcdatamodeld;
+			path = MovieDataModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
