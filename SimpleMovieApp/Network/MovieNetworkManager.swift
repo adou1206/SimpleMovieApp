@@ -26,7 +26,7 @@ final class MovieNetworkManager: MovieNetworkManagerImpl {
         }
         
         let (data, response) = try await session.data(for: request)
-        print("decode response json: \(String(data: data, encoding: .utf8)!)")
+        
         guard let response = response as? HTTPURLResponse,
               (200...300) ~= response.statusCode else {
             let statusCode = (response as! HTTPURLResponse).statusCode

@@ -12,13 +12,12 @@ struct StaticJSONMapper {
         file: String,
         type: U.Type
     ) throws -> U {
-//        print(file)
         guard !file.isEmpty,
                 let path = Bundle.main.path(forResource: file, ofType: "json"),
                 let data = FileManager.default.contents(atPath: path) else {
             throw MappingError.failedToGetContents
         }
-//        print(data)
+
         return try JSONDecoder().decode(U.self, from: data)
     }
 }
